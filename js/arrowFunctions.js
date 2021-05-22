@@ -23,3 +23,7 @@ const evenNumbers = numbers.filter(item => item % 2 === 0);
 const getSquare = n => (n ** 2);
 console.log('getSquare(3) :>> ', getSquare(3));
 
+const pow = (num, n) => (n === 0 ? 1 : num * pow(num, n-1));
+
+console.log('pow(5, 3) :>> ', pow(5, 3));
+
